@@ -44,9 +44,28 @@ In this file we have 32581 rows and 12 columns. Each columns represent a frature
 | cd_person_cred_hist_lengt | Credist history length |
 
 
-In our dataset we have a few features wich are not usefull for our analisis. The fist step is remove this columns (person_home_ownership, loan_intent, loan_grade and cb_person_default_on_file) and chance this features for dummi vaiables with this precedure we get 26 features
+In our dataset, we have identified a few features that are not useful for our analysis. To streamline our analysis, the first step we take is to remove these columns, namely "person_home_ownership," "loan_intent," "loan_grade," and "cb_person_default_on_file." We then replace these features with dummy variables using a specific procedure. This results in a total of 26 features for our analysis. The image below illustrates the importance of each of these features during the training of our model.
 
 
+![Feature importance](https://user-images.githubusercontent.com/86662665/227045482-2ffa1ce7-1687-40b6-8b08-9488eef58a62.png)
+
+Next we show the ROC curve. An ROC (Receiver Operating Characteristic) curve is a graphical representation of the performance of a binary classification model.
+
+It shows the trade-off between the true positive rate (TPR) and the false positive rate (FPR) for different thresholds used by the model. The TPR, also known as sensitivity or recall, is the proportion of positive samples correctly classified as positive. The FPR is the proportion of negative samples incorrectly classified as positive.
+
+An ROC curve plots the TPR on the y-axis and the FPR on the x-axis. The curve shows how the TPR and FPR change as the classification threshold is varied. The closer the curve is to the top-left corner of the plot, the better the performance of the model, as it indicates a higher TPR and lower FPR for all possible thresholds.
 
 ![ROC curve](https://user-images.githubusercontent.com/86662665/227044310-e0384e51-d741-4f7b-8c08-27b82f2f0862.png)
+
+Finally the clasification report of the XGBoost model shows an accuracy of 93%, and here is a table that shows a [classification score](https://medium.com/analytics-vidhya/accuracy-vs-f1-score-6258237beca2):
+
+| Acurracy               |   0.93%  |
+|------------------------|----------|
+
+|   | Precision | Recall | f1-score | 
+|---|-----------|--------|----------|
+| 0 |   0.93    |  0.99  |   0.96   |
+| 1 |   0.96    |  0.70  |   0.81   |
+
+
 
