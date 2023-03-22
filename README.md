@@ -45,3 +45,8 @@ In this file we have 32581 rows and 12 columns. Each columns represent a frature
 
 
 In our dataset we have a few features wich are not usefull for our analisis. The fist step is remove this columns (person_home_ownership, loan_intent, loan_grade and cb_person_default_on_file) and chance this features for dummi vaiables with this precedure we get 26 features
+
+
+
+![ROC curve](https://user-images.githubusercontent.com/86662665/227044310-e0384e51-d741-4f7b-8c08-27b82f2f0862.png)
+
