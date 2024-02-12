@@ -37,6 +37,8 @@ In this file we have 32581 rows and 12 columns. Each columns represent a frature
 
 In our dataset, we have identified a few features that are not useful for our analysis. To streamline our analysis, the first step we take is to remove these columns, namely "person_home_ownership," "loan_intent," "loan_grade," and "cb_person_default_on_file." We then replace these features with dummy variables using a specific procedure. This results in a total of 26 features for our analysis. The image below illustrates the importance of each of these features during the training of our model.
 
+![Feature importande](https://github.com/Maucalderondelab/Credit-Risk-Assestment/blob/master/Feature%20Importance.png)
+
 
 
 
