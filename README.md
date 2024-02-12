@@ -11,7 +11,7 @@ While traditional methods heavily rely on the 5 Cs for credit risk assessment, w
 
 XGBoost stands for Extreme Gradient Boosting, a machine learning method specializing in both regression and classification tasks. It builds upon the concept of Gradient Boosting Decision Trees (GBDT), which are similar to Random Forests in their use of multiple decision trees for prediction. However, XGBoost takes GBDT to the next level by implementing several key enhancements:
 
-* Scalability: Handles large datasets on multiple machines.
-* Performance: Achieves higher accuracy by focusing on optimizing splitting criteria and minimizing the loss function.
-* Regularization: Built-in regularization techniques prevent overfitting and improve model generalizability
+* **Scalability :** Handles large datasets on multiple machines.
+* **Performance :** Achieves higher accuracy by focusing on optimizing splitting criteria and minimizing the loss function.
+* **Regularization: ** Built-in regularization techniques prevent overfitting and improve model generalizability
 
