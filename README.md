@@ -43,4 +43,5 @@ In our dataset, we have identified a few features that are not useful for our an
 
 ![Classification score](https://github.com/Maucalderondelab/Credit-Risk-Assestment/blob/master/Train%20and%20Validation%20Log%20Loss.png)
 
+![Data Distributton](https://github.com/Maucalderondelab/Credit-Risk-Assestment/blob/master/data-distribution.png)
 
