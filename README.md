@@ -70,7 +70,14 @@ The AUC-ROC is a widely used metric for evaluating the performance of binary cla
 
 ![AUC-ROC](https://github.com/Maucalderondelab/Credit-Risk-Assestment/blob/master/Roc%20curve.png)
 
-### Other evaluation metrics
+### Other Evaluation Metrics
+In addition to AUC-ROC, we computed several other evaluation metrics to assess the performance of our model:
+
+* Accuracy: The proportion of correctly classified instances out of the total instances. It provides an overall measure of the model's correctness.
+* Precision: The proportion of true positive predictions out of all positive predictions made by the model. It measures the model's ability to avoid false positives.
+* Recall: The proportion of true positive predictions out of all actual positive instances in the data. It measures the model's ability to capture all positive instances.
+* F1 Score: The harmonic mean of precision and recall, providing a balanced measure of the model's performance in binary classification tasks.
+These metrics together provide a comprehensive evaluation of our XGBoost classifier model's performance across different aspects of classification.
 
 | Acurracy               |   0.93%  |
 |------------------------|----------|
