@@ -36,13 +36,13 @@ In this file we have 32581 rows and 12 columns. Each columns represent a frature
 
 ## Identifying Outliers with Local Outlier Factor (LOF)
 Before diving into dataset analysis, it's crucial to identify any potential outliers that might skew our analysis. To accomplish this, we'll implement the Local Outlier Factor (LOF), an unsupervised anomaly detection technique used to identify outliers and anomalies in a dataset. It measures the local deviation of the density of a given sample with respect to its neighbors. It's local in that the anomaly score depends on how isolated the object is with respect to the surrounding neighborhood. More precisely, locality is determined by k-nearest neighbors, whose distance is used to estimate the local density. By comparing the local density of a sample to the local densities of its neighbors, one can identify samples that have substantially lower density than their neighbors. These are considered outliers.
+
 [https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.LocalOutlierFactor.html]()
 
 ## One-Hot Encoding
 This technique is crucial as it enables our machine learning algorithms to effectively utilize categorical data, which would otherwise be incompatible. It also ensures that the algorithms do not assign arbitrary numerical values to categories, which could lead to misinterpretations.
 
 In our code, one-hot encoding is applied to the categorical variables in the dataset before training our machine learning models. This preprocessing step ensures that our models can accurately learn from and make predictions based on the categorical data present in the dataset.
-
 
 ![Data Distributton](https://github.com/Maucalderondelab/Credit-Risk-Assestment/blob/master/data-distribution.png)
 
@@ -57,13 +57,13 @@ Number of Estimators: 3200
 
 Additionally, we visualized the training and validation loss over the boosting rounds to assess the model's performance during training. The graph below illustrates how the loss decreases over time, indicating the model's improvement in capturing the underlying patterns in the data without overfitting.
 
-![Classification score](https://github.com/Maucalderondelab/Credit-Risk-Assestment/blob/master/Train%20and%20Validation%20Log%20Loss.png)
+![Val-loss](https://github.com/Maucalderondelab/Credit-risk-assessment/blob/master/Val-loss.png)
 
 ## Evaluation Metrics
 ### Feature Importance
 After training the XGBoost classifier model, we evaluated the importance of each feature in predicting the target variable. Feature importance provides insights into which features have the most significant impact on the model's predictions. The graph below illustrates the relative importance of each feature, allowing us to identify the key factors driving the classification decisions.
 
-![Feature importande](https://github.com/Maucalderondelab/Credit-Risk-Assestment/blob/master/Feature%20Importance.png)
+![Feature importande](https://github.com/Maucalderondelab/Credit-risk-assessment/blob/master/Feature%20Importance.png)
 
 ### AUC-ROC (Area Under the Receiver Operating Characteristic Curve)
 The AUC-ROC is a widely used metric for evaluating the performance of binary classification models. It measures the area under the receiver operating characteristic curve, which plots the true positive rate (sensitivity) against the false positive rate (1-specificity) at various threshold settings. A higher AUC-ROC score indicates better discrimination ability of the model between the positive and negative classes. The graph below displays the ROC curve and the calculated AUC score for our trained XGBoost classifier model.
