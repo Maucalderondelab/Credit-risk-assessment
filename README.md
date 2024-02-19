@@ -59,10 +59,28 @@ Additionally, we visualized the training and validation loss over the boosting r
 
 ![Classification score](https://github.com/Maucalderondelab/Credit-Risk-Assestment/blob/master/Train%20and%20Validation%20Log%20Loss.png)
 
+## Evaluation Metrics
+### Feature Importance
+After training the XGBoost classifier model, we evaluated the importance of each feature in predicting the target variable. Feature importance provides insights into which features have the most significant impact on the model's predictions. The graph below illustrates the relative importance of each feature, allowing us to identify the key factors driving the classification decisions.
 
 ![Feature importande](https://github.com/Maucalderondelab/Credit-Risk-Assestment/blob/master/Feature%20Importance.png)
 
+### AUC-ROC (Area Under the Receiver Operating Characteristic Curve)
+The AUC-ROC is a widely used metric for evaluating the performance of binary classification models. It measures the area under the receiver operating characteristic curve, which plots the true positive rate (sensitivity) against the false positive rate (1-specificity) at various threshold settings. A higher AUC-ROC score indicates better discrimination ability of the model between the positive and negative classes. The graph below displays the ROC curve and the calculated AUC score for our trained XGBoost classifier model.
+
 ![AUC-ROC](https://github.com/Maucalderondelab/Credit-Risk-Assestment/blob/master/Roc%20curve.png)
+
+### Other evaluation metrics
+
+| Acurracy               |   0.93%  |
+|------------------------|----------|
+
+|   | Precision | Recall | f1-score | 
+|---|-----------|--------|----------|
+| 0 |   0.93    |  0.99  |   0.96   |
+| 1 |   0.96    |  0.70  |   0.81   |
+
+
 
 
 
