@@ -43,13 +43,26 @@ This technique is crucial as it enables our machine learning algorithms to effec
 
 In our code, one-hot encoding is applied to the categorical variables in the dataset before training our machine learning models. This preprocessing step ensures that our models can accurately learn from and make predictions based on the categorical data present in the dataset.
 
+
 ![Data Distributton](https://github.com/Maucalderondelab/Credit-Risk-Assestment/blob/master/data-distribution.png)
+
+## Trained XGBoost Classifier Model
+As mentioned in the introduction, our machine learning approach utilizes the powerful XGBoost classifier model. After preprocessing the data, we trained the XGBoost model using grid search to find the optimal hyperparameters for achieving the best performance.
+
+Best Scoring Parameters:
+
+Learning Rate: 0.01
+Maximum Depth: 6
+Number of Estimators: 3200
+
+Additionally, we visualized the training and validation loss over the boosting rounds to assess the model's performance during training. The graph below illustrates how the loss decreases over time, indicating the model's improvement in capturing the underlying patterns in the data without overfitting.
+
+![Classification score](https://github.com/Maucalderondelab/Credit-Risk-Assestment/blob/master/Train%20and%20Validation%20Log%20Loss.png)
 
 
 ![Feature importande](https://github.com/Maucalderondelab/Credit-Risk-Assestment/blob/master/Feature%20Importance.png)
 
 ![AUC-ROC](https://github.com/Maucalderondelab/Credit-Risk-Assestment/blob/master/Roc%20curve.png)
 
-![Classification score](https://github.com/Maucalderondelab/Credit-Risk-Assestment/blob/master/Train%20and%20Validation%20Log%20Loss.png)
 
 
